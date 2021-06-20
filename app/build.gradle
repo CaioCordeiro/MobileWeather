@@ -32,7 +32,9 @@ android {
         jvmTarget = '1.8'
     }
 }
-
+repositories {
+    jcenter()
+}
 dependencies {
 
     implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
@@ -54,4 +56,5 @@ dependencies {
     testImplementation 'junit:junit:4.+'
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+    implementation 'jp.wasabeef:recyclerview-animators:3.0.0'
 }
